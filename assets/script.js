@@ -47,6 +47,21 @@ function generatePassword() {
   console.log(numberChoice)
   var specialChoice = confirm("Do you want special characters in your password?")
   console.log(specialChoice)
+  
+  var possibleChoices = []
+  if (upperChoice) {
+    possibleChoices = possibleChoices.concat(lettersUpperCase)
+  }
+  if (lowerChoice) {
+    possibleChoices = possibleChoices.concat(lettersLowerCase)
+  }
+  if (numberChoice) {
+    possibleChoices= possibleChoices.concat(numbers)
+  }
+  if (specialChoice) {
+    possibleChoices = possibleChoices.concat(specialCharacters)
+  }
+
 }
 
 
