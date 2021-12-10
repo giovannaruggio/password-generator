@@ -25,7 +25,21 @@ var lettersLowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "-", ",", ".", ":", ";", ">", "<", "=", "?", "[", "/", "_", "~"];
 
-
+//Start function to generate password
+//Add variable for password length & message prompt
+function generatePassword() {
+  var passwordLength = prompt("What is the desired length of your password?")
+  console.log(passwordLength)
+  //Set password length 8<128
+  if (passwordLength < 8) {
+    alert("Length must be greater than 8!")
+    return;
+  }
+  if (passwordLength > 128) {
+    alert("Length must be less than 128!")
+    return;
+  }
+}
 
 
 // Write password to the #password input
