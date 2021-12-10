@@ -39,6 +39,14 @@ function generatePassword() {
     alert("Length must be less than 128!")
     return;
   }
+  var upperChoice = confirm("Do you want upper case letters in your password?")
+  console.log(upperChoice)
+  var lowerChoice = confirm("Do you want lower case letters in your password?")
+  console.log(lowerChoice)
+  var numberChoice = confirm("Do you want numbers in your password?")
+  console.log(numberChoice)
+  var specialChoice = confirm("Do you want special characters in your password?")
+  console.log(specialChoice)
 }
 
 
