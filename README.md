@@ -12,6 +12,8 @@ This project includes a modification and rework of starter code to create an app
 
 <img src="./assets/images/PasswordLength2.jpg" alt="Alert"/>
 
+<img src="./assets/images/PasswordGenerator.jpg" alt="GeneratedPassword"/>
+
 
 
 ## Link
