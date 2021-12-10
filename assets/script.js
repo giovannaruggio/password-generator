@@ -8,7 +8,8 @@ var lettersUpperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "
 var lettersLowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "-", ",", ".", ":", ";", ">", "<", "=", "?", "[", "/", "_", "~"];
-var passwordLength = "";
+var passwordLength = 0;
+var generatedPassword = "";
 
 // Start function to generate password
 // Add variable for password length & message prompt
@@ -53,6 +54,12 @@ function generatePassword() {
   console.log(possibleChoices)
   console.log(possibleChoices[Math.floor(Math.random()*possibleChoices.length)])
 
+  for (var i = 0; i < passwordLength; i++) {
+    var currentCharacter = possibleChoices[Math.floor(Math.random()*possibleChoices.length)]
+    generatedPassword = generatedPassword.concat(currentCharacter)
+    console.log(generatedPassword)
+  }
+  return generatedPassword;
 }
 
 // Write password to the #password input
