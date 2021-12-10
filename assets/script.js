@@ -54,11 +54,13 @@ function generatePassword() {
   console.log(possibleChoices)
   console.log(possibleChoices[Math.floor(Math.random()*possibleChoices.length)])
 
+  // Set loop to allow the chosen amount of characters to be selected
   for (var i = 0; i < passwordLength; i++) {
     var currentCharacter = possibleChoices[Math.floor(Math.random()*possibleChoices.length)]
     generatedPassword = generatedPassword.concat(currentCharacter)
     console.log(generatedPassword)
   }
+  // Return generated password to display on screen
   return generatedPassword;
 }
 
